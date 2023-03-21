@@ -4,7 +4,7 @@
     --silver: #BFC0C0;
     --gold: #FFD400;
     --claret: #710627;
-    --chinese-rose: --#986374;
+    --chinese-rose: #986374;
     /* https://coolors.co/01161e-ff3e41-bfc0c0-986374-710627-ffd400 */
 }
 
@@ -17,7 +17,7 @@ body{
 .headRest{
     position: relative;
     height: 140px;
-    background-color: var(--imperial);
+    background-color: var(--claret);
 }
 
 header{
@@ -34,10 +34,12 @@ header{
 h1{
     position: absolute;
     bottom: 0;
+    margin: 0;
+    padding: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
-    color: var(--claret);
+    color: var(--imperial);
 }
 
 .navList{
