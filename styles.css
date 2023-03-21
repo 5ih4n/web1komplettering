@@ -1,0 +1,16 @@
+:root {
+    --imperial: #FF3E41;
+    --rich-black: #01161E;
+    --silver: --#BFC0C0;
+    --claret: --#710627;
+    --gold: --#FFD400;
+    --chinese-rose: --#986374;
+}
+
+body{
+    background-color: var(--rich-black);
+}
+
+h1{
+    color: var(--silver);
+}
