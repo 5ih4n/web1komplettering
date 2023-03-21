@@ -1,17 +1,93 @@
 :root {
     --imperial: #FF3E41;
     --rich-black: #01161E;
-    --silver: --#BFC0C0;
-    --claret: --#710627;
-    --gold: --#FFD400;
+    --silver: #BFC0C0;
+    --gold: #FFD400;
+    --claret: #710627;
     --chinese-rose: --#986374;
     /* https://coolors.co/01161e-ff3e41-bfc0c0-986374-710627-ffd400 */
 }
 
 body{
     background-color: var(--rich-black);
+    margin: 0;
+    height: 2200px;
+}
+
+.headRest{
+    position: relative;
+    height: 140px;
+    background-color: var(--imperial);
+}
+
+header{
+    background-color: var(--imperial);
+    height: fit-content;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 h1{
-    color: var(--silver);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    color: var(--claret);
+}
+
+.navList{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.navList li{
+    list-style: none;
+    float: left;
+    margin: 20px;
+}
+
+.navList a{
+    transition: ease-in-out 0.2s;
+}
+
+.navList a:hover{
+    color: var(--gold);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.selected{
+    color: var(--gold);
+}
+
+.navList{
+    font-size: 2vw;
+}
+
+#lamps{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#lamps img{
+    width: 15%;
+    height: auto;
+}
+
+#lamp3{
+    margin-left: auto;
 }
