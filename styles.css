@@ -31,6 +31,14 @@ header{
     z-index: 1;
 }
 
+.phoneNr{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 20px;
+    color: var(--gold);
+}
+
 h1{
     position: absolute;
     bottom: 0;
@@ -93,3 +101,20 @@ a{
 #lamp3{
     margin-left: auto;
 }
+
+.frame{
+}
+
+.frame img{
+    width: 100%;
+    border: 30px solid;
+    border-image-source: url(images/border2.png);
+    border-image-slice: 220;
+}
+
+.frame1{
+    width: 25%;
+    margin-left: 15%;
+    border: 1px  #986374;
+}
+
