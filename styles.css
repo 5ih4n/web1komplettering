@@ -107,8 +107,6 @@ a{
     margin: 0 auto;
 }
 
-
-
 #lamps img:hover{
     transform: rotate(17deg);
     transform-origin: top;
@@ -177,12 +175,27 @@ footer{
 .col a{
     color: var(--silver);
     margin: 5px 0;
+    transition: 0.2s ease-in-out;
+}
+
+.col a:hover{
+    color: var(--emerald);
 }
 
 h2{
     color: var(--imperial);
     margin: 0;
 }
+
+.col-2{
+    flex-direction: row;
+}
+
+.col-2 h2{
+    width: 100%;
+}
+
+
 
 
 
