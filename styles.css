@@ -16,7 +16,7 @@ body{
 
 .headRest{
     position: relative;
-    height: 140px;
+    height: 130px;
     background-color: var(--claret);
 }
 
@@ -35,6 +35,9 @@ header{
     float: left;
     width: 20vw;
     margin-left: 50px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
 }
 
 .phoneNr{
@@ -99,6 +102,8 @@ a{
     font-size: 2vw;
 }
 
+/* nav tar slut */
+
 #lamps{
     display: flex;
     flex-direction: row;
@@ -127,8 +132,48 @@ a{
 .bestItems{
     overflow: hidden;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+}
+
+.rightColumn{
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    color: var(--imperial);
+    font-size: 4vw;
+    float: right;
+    width: 100%;
+    text-align: center;
+}
+
+.qingBtn{
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+    background-color: var(--imperial);
+    color: var(--gold);
+    border-radius: 10px;
+}
+
+.teaItems{
+    width: 70%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.leftColumn{
+    float: left;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .frame img{
@@ -139,20 +184,16 @@ a{
 }
 
 .frame1{
-    width: 35%;
-    border: 1px  #986374;
+    width: 40%;
     float: left;
 }
 
-h3 {
-    color: var(--imperial);
-    font-size: 4vw;
+.frame2{
+    width: 70%;
     float: right;
-    width: 50%;
-    text-align: center;
 }
 
-/* footer del ta bort sen */
+/* footer del */
 
 footer{
     margin-top: 40px;
@@ -189,10 +230,17 @@ h2{
 
 .col-2{
     flex-direction: row;
+    margin: 20px;
 }
 
-.col-2 h2{
-    width: 100%;
+.col-2 a{
+    font-size: 40px;
+    margin: 10px;
+}
+
+h4{
+    font-size: 15px;
+    color: var(--silver);
 }
 
 
