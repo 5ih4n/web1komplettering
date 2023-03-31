@@ -16,13 +16,13 @@ body{
 
 .headRest{
     position: relative;
-    height: 130px;
+    height: 140px;
     background-color: var(--claret);
 }
 
 header{
     background-color: #011016;
-    height: fit-content;
+    height: 84px;
     overflow: hidden;
     padding: 0;
     position: fixed;
