@@ -68,6 +68,9 @@ h1{
 }
 
 .navList{
+    position: absolute;
+    bottom: 0;
+    right: 20%;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
@@ -129,10 +132,11 @@ a{
 
 }
 
-.bestItems{
+.container{
     overflow: hidden;
     width: 70%;
-    margin: 0 auto;
+    margin-top: 0 !important;
+    margin: 80px auto;
 }
 
 .rightColumn{
@@ -148,6 +152,7 @@ h3{
     color: var(--imperial);
     font-size: 4vw;
     float: right;
+    margin-top: 90px;
     width: 100%;
     text-align: center;
 }
@@ -161,12 +166,6 @@ h3{
     border-radius: 10px;
 }
 
-.teaItems{
-    width: 70%;
-    margin: 50px auto;
-    overflow: hidden;
-}
-
 .leftColumn{
     float: left;
     width: 45%;
@@ -176,22 +175,47 @@ h3{
     justify-content: center;
 }
 
-.frame img{
+.frame{
     width: 100%;
     border: 30px solid;
     border-image-source: url(images/border2.png);
     border-image-slice: 220;
 }
 
+.altFrame {
+    width: 100%;
+    margin: 0 auto;
+    height: 35vw;
+    position: relative;
+}
+
+.altFrame img{
+    border: 30px solid;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border-image-source: url(images/border3.png);
+    border-image-slice: 220;
+}
+
+#nightText{
+    color: white;
+    width: 80%;
+    font-size: 22px;
+    margin: 0 auto;
+}
+
 .frame1{
-    width: 40%;
+    width: 38%;
     float: left;
 }
 
 .frame2{
-    width: 70%;
+    width: 72%;
     float: right;
 }
+
 
 /* footer del */
 
