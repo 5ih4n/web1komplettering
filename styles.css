@@ -12,6 +12,7 @@
 body{
     background-color: var(--rich-black);
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .headRest{
@@ -48,14 +49,6 @@ header{
     color: var(--gold);
 }
 
-#homeMarquee{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2vw;
-}
-
 h1{
     position: absolute;
     bottom: 0;
@@ -85,6 +78,7 @@ h1{
 }
 
 .navList a{
+    color: var(--silver);
     transition: ease-in-out 0.2s;
 }
 
@@ -98,7 +92,7 @@ a{
 }
 
 .selected{
-    color: var(--gold);
+    color: var(--gold) !important;
 }
 
 .navList{
@@ -110,8 +104,8 @@ a{
 #lamps{
     display: flex;
     flex-direction: row;
-    overflow: hidden;
     width: 80%;
+    height: 140px;
     margin: 0 auto;
 }
 
@@ -122,8 +116,8 @@ a{
 
 #lamps img{
     padding: 0 40px;
-    width: 3.5vw;
-    height: auto;
+    height: 12vw;
+    width: auto;
     transition: ease-out 0.3s;
 }
 
@@ -200,7 +194,7 @@ h3{
 }
 
 #nightText{
-    color: white;
+    color: var(--silver);
     width: 80%;
     font-size: 22px;
     margin: 0 auto;
@@ -216,6 +210,31 @@ h3{
     float: right;
 }
 
+#historyMarquee{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 40px;
+    color: var(--imperial);
+}
+
+#cormorantImg{
+    border: 30px solid;
+    width: 43%;
+    margin-top: 40px;
+    border-image-source: url(images/border3.png);
+    border-image-slice: 170;
+    float: left;
+}
+
+#historyText{
+    float: right;
+    width: 40%;
+    margin-top: 10%;
+    font-size: 1.7vw;
+    color: var(--silver);
+
+}
 
 /* footer del */
 
