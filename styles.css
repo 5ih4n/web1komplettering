@@ -12,7 +12,7 @@
 body{
     background-color: var(--rich-black);
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .headRest{
@@ -96,7 +96,7 @@ a{
 }
 
 .navList{
-    font-size: 2vw;
+    font-size: 1.7vw;
 }
 
 /* nav tar slut */
@@ -111,14 +111,14 @@ a{
 
 #lamps img:hover{
     transform: rotate(17deg);
-    transform-origin: top;
 }
 
 #lamps img{
     padding: 0 40px;
     height: 12vw;
     width: auto;
-    transition: ease-out 0.3s;
+    transition: ease-out 0.2s;
+    transform-origin: top center;
 }
 
 #lamp3{
@@ -130,7 +130,7 @@ a{
     overflow: hidden;
     width: 70%;
     margin-top: 0 !important;
-    margin: 80px auto;
+    margin: 140px auto;
 }
 
 .rightColumn{
@@ -146,7 +146,7 @@ h3{
     color: var(--imperial);
     font-size: 4vw;
     float: right;
-    margin-top: 90px;
+    margin-top: 70px;
     width: 100%;
     text-align: center;
 }
@@ -210,12 +210,35 @@ h3{
     float: right;
 }
 
-#historyMarquee{
+h5{
     position: absolute;
     bottom: 0;
-    width: 100%;
-    font-size: 40px;
+    margin: 0;
+    padding: 10px;
+    left: 50%;
+    font-size: 30px;
+    transform: translateX(-50%);
     color: var(--imperial);
+}
+
+.mountainContainer{
+    position: relative;
+    overflow: auto;
+}
+
+.mountainContainer::before {
+    content: "";
+    position: fixed;
+    display: block;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(images/mountainbackground.avif);
+    filter: brightness(9%) blur(5px);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #cormorantImg{
@@ -233,8 +256,49 @@ h3{
     margin-top: 10%;
     font-size: 1.7vw;
     color: var(--silver);
-
 }
+
+#sunTzu{
+    margin: auto;
+    width: fit-content;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sunText{
+    width: fit-content;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    height: 100%;
+    font-size: 1.5vw;
+    color: var(--imperial);
+    transition: ease-in-out;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.sunLeft{
+    animation-name: sunLeft;
+}
+
+.sunRight{
+    margin-top: 130px;
+    animation-name: sunRight;
+}
+
+@keyframes sunRight {
+    30% {margin-top: 110px;}
+    50% {margin-top: 0px;}
+    70% {margin-top: 20px;}
+}
+
+@keyframes sunLeft {
+    30% {margin-top: 20px;}
+    50% {margin-top: 130px;}
+    70% {margin-top: 110px;}
+}
+
 
 /* footer del */
 
