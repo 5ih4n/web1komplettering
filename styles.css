@@ -19,6 +19,12 @@ body{
     position: relative;
     height: 140px;
     background-color: var(--claret);
+    animation: headRoll 0.3s ease-in;
+}
+
+@keyframes headRoll{
+    0% {width: 0%;}
+    100% {width: 100%;}
 }
 
 header{
@@ -236,7 +242,7 @@ h5{
     top: 0;
     left: 0;
     background-image: url(images/mountainbackground.avif);
-    filter: brightness(9%) blur(5px);
+    filter: brightness(10%) blur(5px);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -303,6 +309,45 @@ h5{
     width: 65%;
 }
 
+#buddhaAnswers{
+    position: fixed;
+    z-index: -1;
+    top: 50px;
+    filter: brightness(50%);
+}
+
+.question{
+    transition: 0.3s ease-in;
+    max-height: 60px;
+    overflow: hidden;
+    width: fit-content;
+    margin: 30px 0;
+}
+
+.question:hover{
+    max-height: 150px;
+}
+
+.questions{
+    margin: 0 15%;
+}
+
+.question p{
+    color: var(--silver);
+    font-size: 20px;
+    width: 30vw;
+}
+
+h6{
+    font-size: 50px;
+    margin: 0;
+    width: fit-content;
+    color: var(--imperial);
+}
+
+#questions2{
+    float: right;
+}
 
 /* footer del */
 
