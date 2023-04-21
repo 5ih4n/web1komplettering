@@ -20,6 +20,7 @@ body{
     height: 140px;
     background-color: var(--claret);
     animation: headRoll 0.3s ease-in;
+    z-index: 1;
 }
 
 @keyframes headRoll{
@@ -111,8 +112,10 @@ a{
     display: flex;
     flex-direction: row;
     width: 80%;
-    height: 140px;
+    height: 160px;
     margin: 0 auto;
+    animation: lampSlide 0.5s ease-out;
+    z-index: 0;
 }
 
 #lamps img:hover{
@@ -129,7 +132,15 @@ a{
 
 #lamp3{
     margin-left: auto;
+}
 
+@keyframes lampSlide {
+    0% { 
+        transform: translateY(-150%); 
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .container{
@@ -313,7 +324,7 @@ h5{
     position: fixed;
     z-index: -1;
     top: 50px;
-    filter: brightness(50%);
+    filter: brightness(30%);
 }
 
 .question{
@@ -330,12 +341,13 @@ h5{
 
 .questions{
     margin: 0 15%;
+    width: fit-content;
 }
 
 .question p{
     color: var(--silver);
     font-size: 20px;
-    width: 30vw;
+    width: 25vw;
 }
 
 h6{
@@ -349,10 +361,64 @@ h6{
     float: right;
 }
 
+.kaixing{
+    margin: 100px 15%;
+    overflow: hidden;
+}
+
+.kaixing img{
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.kaixing p{
+    float: right;
+    width: 45%;
+    font-size: 23px;
+    color: var(--silver);
+}
+
+.kaixing2{
+    padding: 0 15%;
+    overflow: hidden;
+    background: #01131a;
+}
+
+.kaixing2 img{
+    float: right;
+    width: 45%;
+}
+
+.kaixing2 p{
+    width: 45%;
+    float: left;
+    font-size: 23px;
+    color: var(--silver);
+}
+
+.shape {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 144px;
+}
+
+.shape .shape-fill {
+    fill: #01131a;
+}
+
+
 /* footer del */
 
 footer{
-    margin-top: 40px;
     background-color: var(--rich-black);
     display: flex;
     width: 60%;
