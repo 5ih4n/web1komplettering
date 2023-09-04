@@ -17,7 +17,8 @@ body{
 
 .headRest{
     position: relative;
-    height: 140px;
+    height: 8.5vw;
+    min-height: 95px;
     background-color: var(--claret);
     animation: headRoll 0.3s ease-in;
     z-index: 1;
@@ -30,7 +31,8 @@ body{
 
 header{
     background-color: #011016;
-    height: 84px;
+    min-height: 54px;
+    height: 5vw;
     overflow: hidden;
     padding: 0;
     position: fixed;
@@ -65,6 +67,7 @@ h1{
     transform: translateX(-50%);
     z-index: 0;
     color: var(--imperial);
+    font-size: 2vw;
 }
 
 .navList{
@@ -559,6 +562,25 @@ h2{
 h4{
     font-size: 15px;
     color: var(--silver);
+}
+
+@media screen and (max-width: 900px){
+    .logo {
+        display: none;
+    }
+
+    .navList{
+        right: none;
+        left: 0;
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 20px;
+        width: 70vw;
+        margin: 0;
+        text-align: center;
+    }
 }
 
 
